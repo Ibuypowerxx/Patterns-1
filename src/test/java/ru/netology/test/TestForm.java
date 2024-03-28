@@ -2,20 +2,21 @@ package ru.netology.test;
 
 import com.codeborne.selenide.Condition;
 import com.github.javafaker.Faker;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
+
 import ru.netology.data.DataGenerator;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
+
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.openqa.selenium.Keys.BACK_SPACE;
 
 public class TestForm {
-private Faker faker;
+    private Faker faker;
 
     @BeforeEach
     void setUp(){
